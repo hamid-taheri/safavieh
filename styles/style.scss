@@ -1,0 +1,140 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$background:rgb(4, 202, 4);
+
+body{
+    direction: rtl;
+}
+
+@font-face {
+    font-family: koodak;
+    src: url(../font/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+*{
+    font-family: koodak;
+}
+
+#container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 60px 60px 420px 85px;
+
+    #title{
+        @include center();
+        grid-column: 2/10;
+        grid-row: 1/2;
+        background-color: darkgreen;
+        color: yellow;
+        font-size: large;
+    }
+
+    header{
+        background-color: yellow;
+        grid-column: 2/10;
+        grid-row: 2/3;
+                
+        ul{
+            list-style-type: none;
+            display: flex;        
+            justify-content: center;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            :hover{
+                background-color: greenyellow;
+            }
+            
+            li{
+                flex: 1;
+                @include center();
+                :hover{
+                    cursor: pointer;
+                }
+                :active{
+                    color: yellow;
+                }
+                a{
+                    color: green;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #side{
+        @include center();
+        grid-column: 10/12;
+        grid-row: 1/4;
+        background-color: $background;
+        flex-direction: column;
+        .sli{
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .sa{
+                text-decoration: none;
+                color: darkgreen;                
+            }
+        }
+    }
+
+    main{
+        @include center();
+        grid-column: 2/10;
+        grid-row: 3/4;
+        background-color: greenyellow;
+        .md{
+            @include center();
+            flex-direction: column;
+            img{
+                padding-top: 5px;
+                height: 330px;
+            }
+            p{
+                text-align: center;
+                color: darkgreen;
+            }          
+        }
+    }
+
+    footer{
+        grid-column: 2/12;
+        grid-row: 4/-1;
+        background-color: green;
+        color: yellow;
+       
+        div{
+            @include center();
+            height: 100%;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            #p1{
+                flex: 1;
+                margin: 0;
+                padding: 0;
+            }
+            #p2{
+                flex: 1;
+                margin: 0;
+                padding: 0;
+            }
+            #p3{
+                flex: 1;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    } 
+}
+
+.sli:hover{
+    background-color: lime;
+}

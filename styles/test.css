@@ -1,0 +1,85 @@
+form{
+    overflow-y: scroll;
+     height: 420px;
+      width: 100%;
+      padding-right: 15px;
+      box-sizing: border-box;
+      color: darkgreen;
+}
+
+p{
+    margin-bottom: 4px;
+}
+
+#dbtn{
+    margin-top: 15px;
+    padding-top: 25x;
+    padding-left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn1{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    border-radius: 25%;
+    background-color: yellow;
+    border-color: darkgreen;
+    box-shadow: 2px 2px 2px ;
+    cursor: pointer;
+}
+
+#btn2{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    border-radius: 25%;
+    background-color: yellow;
+    border-color: darkgreen;
+    box-shadow: 2px 2px 2px ;
+    cursor: pointer;
+}
+
+#btnr{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    border-radius: 25%;
+    background-color: yellow;
+    border-color: darkgreen;
+    box-shadow: 2px 2px 2px ;
+    cursor: pointer;
+}
+
+#dresult{
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 120);
+    text-align: center;
+}
+
+
+#result2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 226, 116) ;
+    text-align: center;
+}

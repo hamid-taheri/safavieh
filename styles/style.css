@@ -1,0 +1,135 @@
+body {
+  direction: rtl;
+}
+
+@font-face {
+  font-family: koodak;
+  src: url(../font/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+* {
+  font-family: koodak;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px 60px 420px 85px;
+}
+#container #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/10;
+  grid-row: 1/2;
+  background-color: darkgreen;
+  color: yellow;
+  font-size: large;
+}
+#container header {
+  background-color: yellow;
+  grid-column: 2/10;
+  grid-row: 2/3;
+}
+#container header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+#container header ul :hover {
+  background-color: greenyellow;
+}
+#container header ul li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container header ul li :hover {
+  cursor: pointer;
+}
+#container header ul li :active {
+  color: yellow;
+}
+#container header ul li a {
+  color: green;
+  text-decoration: none;
+}
+#container #side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 10/12;
+  grid-row: 1/4;
+  background-color: rgb(4, 202, 4);
+  flex-direction: column;
+}
+#container #side .sli {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#container #side .sli .sa {
+  text-decoration: none;
+  color: darkgreen;
+}
+#container main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/10;
+  grid-row: 3/4;
+  background-color: greenyellow;
+}
+#container main .md {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#container main .md img {
+  padding-top: 5px;
+  height: 330px;
+}
+#container main .md p {
+  text-align: center;
+  color: darkgreen;
+}
+#container footer {
+  grid-column: 2/12;
+  grid-row: 4/-1;
+  background-color: green;
+  color: yellow;
+}
+#container footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+#container footer div #p1 {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+#container footer div #p2 {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+#container footer div #p3 {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.sli:hover {
+  background-color: lime;
+}/*# sourceMappingURL=style.css.map */
